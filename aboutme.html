@@ -5,8 +5,17 @@
   </head>
   
   <body>
-    document.body.style.backgroundColor="Sky Blue";
-    <h1 style="text-align:center;">Nhi Nguyen </h1>
+    
+    <canvas id="myCanvas" width="1000" height="1000" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.font = "300px Amaze";
+      ctx.strokeText("Nhi Nguyen",100,500);
+    </script>
+
     
     <button type="button">Home</button>
 
