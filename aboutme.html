@@ -132,8 +132,6 @@ div.tab button.active {
 </head>
 <body>
 
-<p>Click on the buttons inside the tabbed menu:</p>
-
 <div class="tab">
   <button class="tablinks" onclick="openCity(event, 'Home')"> Home </button>
   <button class="tablinks" onclick="openCity(event, 'Interest')"> Likes/ Dislikes </button>
@@ -143,7 +141,7 @@ div.tab button.active {
 </div>
 
 <div id="Home" class="tabcontent">
-  <h3>About me</h3>
+  <h3> About me </h3>
   <p> My name is Nhi. Hello guys. </p>
 </div>
 
@@ -184,6 +182,9 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+  
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 </script>
      
 </body>
