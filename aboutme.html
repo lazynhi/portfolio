@@ -84,7 +84,6 @@
 
 https://lazynhi.github.io/portfolio/aboutme.html --> 
 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -131,44 +130,46 @@ div.tab button.active {
 </head>
 <body>
 
+<p>In this example, we use JavaScript to "click" on the London button, to open the tab on page load.</p>
+
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Home')"> Home </button>
-  <button class="tablinks" onclick="openCity(event, 'Interest')"> Likes/ Dislikes </button>
-  <button class="tablinks" onclick="openCity(event, 'Facts')"> Fun facts about me </button>
-  <button class="tablinks" onclick="openCity(event, 'Projects')> My projects </button>
-  <button class="tablinks" onclick="openCity(event, 'Links')> My favorite things </button>
+  <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
+  <button class="tablinks" onclick="openTab(event, 'Interests')"> Likes/ Dislikes </button>
+  <button class="tablinks" onclick="openTab(event, 'Facts')"> Facts about me </button>
+  <button class="tablinks" onclick="openTab(event, 'Projects')"> My projects </button>
+  <button class="tablinks" onclick="openTab(event, 'Favorite')"> My favorite websites </button>
 </div>
 
 <div id="Home" class="tabcontent">
-  <h3> Heyyyyy </h3>
-  <p> My name is Nhi. Hello guys. </p>
+  <h3> Short Biography </h3>
+  <p> I will turn 16 on August 9th. I am an upcoming junior as well. </p>
 </div>
 
-<div id="Interest" class="tabcontent">
+<div id="Interests" class="tabcontent">
   <h3> Likes </h3>
-  <p> Japan related. </p>
+  <p> Anime, food </p>
   <h3> Dislikes </h3>
-  <p> Boring things </p>
+  <p> Everything that is bitter </p>
 </div>
 
 <div id="Facts" class="tabcontent">
-  <h3> Fun facts about me </h3>
-  <p> I want to go to Japan.</p>
+  <h3> Extra activities </h3>
+  <p> I'm the vice president of the Anime Club at my school. </p>
 </div>
-  
+
 <div id="Projects" class="tabcontent">
-  <h3> Paddle Ball </h3>
-  <p> Dont' have the picture at the momment. </p>
-  <h3> More projects to upload! </h3>
+	<h3> What have I done? </h3>
+    <p> I've made multiple programs using multiple languages such as Scratch, Python, HTML, CSS, and Java Script !! </p>
 </div>
- 
-<div id="Links" class="tabcontent">
-  <h3> Want to know more about me? </h3>
-  <p> I'm an anime lover. </p>
+
+<div id="Favorite" class="tabcontent">
+	<h3> Favorite Websites </h3>
+    <h4><a href="https://www.pinterest.com/">Pinterest</a></h4>
+    <p> This is where I get all my inspirations for art, crafts, and many diys ! </p>
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -181,7 +182,10 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
      
 </body>
 </html> 
-
