@@ -1,89 +1,3 @@
-<!-- <!DOCTYPE html>
-<html>
-  <head>
-  <title>Nhi's Portfolio</title>
-  </head>
-  
-  <body>
-    
-    <canvas id="myCanvas" width="450" height="120" style="border:0.1px solid #d3d3d3;"></canvas>
-    
-    <img scr="adccccdfdd26983d7e7ce644f839df1c.png" alt="my name" height="300" width="600" </img>
-    
-    <div id="myCanvas"><center>
-      <canvas width="500" height="100"></canvas></center>
-    </div>
-    
-    <script>
-      var c = document.getElementById("myCanvas");
-      var ctx = c.getContext("2d");4
-      ctx.font = "70px Murray";
-      ctx.strokeText("Nhi Nguyen",50,80);
-    </script>
-    
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'Home')"> Home </button>
-      <button class="tablinks" onclick="openCity(event, 'Interest')"> Likes/ Dislikes </button>
-      <button class="tablinks" onclick="openCity(event, 'Facts')"> Fun Facts about me </button>
-      <button class="tablinks" onclick="openCity(event, 'Projects')"> My projects </button>
-      <button class="tablinks" onclick="openCity(event, 'Websites')"> My favorite websites </button>
-    </div>
-    
-    <div id="Home" class="tabcontent">
-      <h3> Home </h3>
-       <p> Hi everyone! My name is Nhi Nguyen </p>
-    
-       <p> I'm going to be a junior next year and my birthday is August 9th, 2001. </p>
-    
-       <p> I like everything that is art related and I like math </p>
-    
-       <p> I don't enjoy writing and not being being free </p>
-    
-       <p> I grew up in Vietnam and this is my 2nd year living in the US </p>
-      
-       <img src=" " alt="screenshot for the project" height="200" width="200"></img>
-    
-       <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/16807511_1858837811061006_496700102201392696_n.jpg?oh=8e91b1c57db5a4a9c113450d70a49cb7&oe=59C7D4DD" alt="Nhi's selfie" height="400" width="400"></img>
-     </div>
-
-     <div id="Interest" class="tabcontent">
-       <h3> Likes/ Dislikes </h3>
-       <p> I like food </p>
-     </div>
-
-     <div id="Facts" class="tabcontent">
-       <h3> Fun Facts about me </h3>
-       <p> I fell into a lake </p>
-    </div>
-
-     <div id="Projects" class="tablecontent">
-       <h3> My projects </h3>
-       <p> Screenshot </p>
-    </div>
-
-     <button type="button">Home</button>
-
-    <button type="button">Likes/ Dislikes</button>
-    
-    <button type="button">Fun things about me</button>
-    
-    <button type="button">My projects</button>
-    
-    <button type="button">My favorite websites</button>
-    
-     
-    
-    <img src=" " alt="screenshot for the project" height="200" width="200"></img>
-    
-    <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/16807511_1858837811061006_496700102201392696_n.jpg?oh=8e91b1c57db5a4a9c113450d70a49cb7&oe=59C7D4DD" alt="Nhi's selfie" height="400" width="400"></img>
-   
-
-  </body>
-</html>
-
-
-https://lazynhi.github.io/portfolio/aboutme.html --> 
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -130,7 +44,17 @@ div.tab button.active {
 </head>
 <body>
 
-<p>In this example, we use JavaScript to "click" on the London button, to open the tab on page load.</p>
+<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Alba";
+ctx.fillText("Nhi Nguyen", 10, 50);
+
+</script>
 
 <div class="tab">
   <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
