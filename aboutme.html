@@ -1,140 +1,266 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <style>
+
 body {font-family: "Lato", sans-serif;}
 
+
+
 /* Style the tab */
+
 div.tab {
+
     overflow: hidden;
+
     border: 1px solid #ccc;
-    background-color: #5355cd 
+
+    background-color: #5355cd ;
+
 }
+
+
+
 /* Style the buttons inside the tab */
+
 div.tab button {
+
     background-color: #a475fd;
+
     float: left;
+
     border: none;
+
     outline: none;
+
     cursor: pointer;
-    padding: 14px 16px;    transition: 0.3s;
 
-	font-size: 39px;
-}/* Change background color of buttons on hover */
+    padding: 14px 16px;
+
+    transition: 0.3s;
+
+    font-size: 39px;
+
+}
+
+
+
+/* Change background color of buttons on hover */
+
 div.tab button:hover {
+
     background-color: #5355cd;
-}
-/* Create an active/current tablink class */
-div.tab button.active {
-    background-color: #5355cd;
+
 }
 
-</* Style the tab content */
+
+
+/* Create an active/current tablink class */
+
+div.tab button.active {
+
+    background-color: #5355cd;
+
+}
+
+
+
+/* Style the tab content */
+
 .tabcontent {
+
     display: none;
+
     padding: 6px 12px;
+
     border: 1px solid #ccc;
+
     border-top: none;
+
 }
+
 	
+
 /* Style the info box */
+
 .div1 {
+
     border: 1px solid black;
+
     height:250px;
+
     width:500px;
+
     background:url(href="http://wallpapermonkey.com/wp-content/uploads/2016/09/pusheen-wallpaper7.jpg");
+
     background-repeat: no-repeat;
+
 }
+
 	
-	</style>
+
+</style>
+
 	
+
 <title> Nhi's Portfolio </title>
 
+	
+
+<img src="adccccdfdd26983d7e7ce644f839df1c.png" alt="some_text" style="width:200 ;height:300">
+
+	
+
 </head>
+
 <body>
- <div class="bgimg-1">
-    <div class="caption">	    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <center><img src="adccccdfdd26983d7e7ce644f839df1c.png" alt="some_text" align="middle"></center>
-	    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    </div>
-    </div>
+
 
 
 <div class="tab">
+
   <button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen"> Home </button>
 
-	<button class="tablinks" onclick="openTab(event, 'Interests')"> Likes/ Dislikes </button>
-  <button class="tablinks" onclick="openTab(event, 'Facts')"> Facts about me </button> 
+  <button class="tablinks" onclick="openTab(event, 'Interests')"> Likes/ Dislikes </button>
+
+  <button class="tablinks" onclick="openTab(event, 'Facts')"> Facts about me </button>
+
   <button class="tablinks" onclick="openTab(event, 'Projects')"> My projects </button>
+
   <button class="tablinks" onclick="openTab(event, 'Favorite')"> My favorite websites </button>
-	</div>
+
+</div>
+
+
 
 <div id="Home" class="tabcontent">
+
   <div class="div1">
 
-	  <h3><strong> Hey there! </strong></h3>
-	  <p> My name is Nhi. I'm an upcoming junior at San Lorenzo High School and I just turn 16 yesterday :D </p> 
-	    
+	  <h3> Hey there! </h3>
+
+	  <p> My name is Nhi. I'm an upcoming junior at San Lorenzo High School and I just turn 16 yesterday :D </p>
+
   </div>
+
 </div>
+
+
 
 <div id="Interests" class="tabcontent">
 
-	<h3> Likes </h3>
+  <h3> Likes </h3>
+
   <p> ANIME !! - I've watched more than 100 anime and read more than 120 mangas. </p>
+
   <p> CAT :3  - My future house will be full with cats. *meows evily</p>
+
   <img src="cat-confused.jpg" alt="cat_img" style="width:200px ;height:200px">
+
   <p> SWEETS !! - That's my source of life <3 </p>
+
   <h3> Dislikes </h3>
+
   <p> Everything that is bitter - Turns my day bitter as well  </p>
+
   <p> Stress !! - *no comment </p>
+
   <p> Insects - ewwww</p>
+
 </div>
 
-<div id="Facts" class="tabcontent">  <h3> Extra activities </h3>
+
+
+<div id="Facts" class="tabcontent">
+
+  <h3> Extra activities </h3>
+
   <p> I was in the badminton team for 2 years. (Will be in next year) </p>
+
   <p> I'm the vice president in the Anime club for 2 years. (Will be the president next year) </p>
+
+
+
 	
+
   <h3> Hobbies </h3>
+
   <p> I'm an artist </p>
+
   <img scr="" alt="my_art" width="150"; height="150">
+
 </div>
+
+
 
 <div id="Projects" class="tabcontent">
+
 	<h3> What have I done? </h3>
+
     <p> I've made multiple programs using multiple languages such as Scratch, Python, HTML, CSS, and Java Script !! </p>
+
 </div>
+
+
 
 <div id="Favorite" class="tabcontent">
+
 	<h3> Favorite Websites </h3>
+
     <h4><a href="https://www.pinterest.com/">Pinterest</a></h4>
+
     <p> This is where I get all my inspirations for art, crafts, and many diys ! </p>
+
 </div>
 
+
+
 <script>
+
 function openTab(evt, cityName) {
+
     var i, tabcontent, tablinks;
+
     tabcontent = document.getElementsByClassName("tabcontent");
+
     for (i = 0; i < tabcontent.length; i++) {
+
         tabcontent[i].style.display = "none";
+
     }
+
     tablinks = document.getElementsByClassName("tablinks");
+
     for (i = 0; i < tablinks.length; i++) {
+
         tablinks[i].className = tablinks[i].className.replace(" active", "");
+
     }
+
     document.getElementById(cityName).style.display = "block";
+
     evt.currentTarget.className += " active";
+
 }
 
+
+
 // Get the element with id="defaultOpen" and click on it
+
 document.getElementById("defaultOpen").click();
-   background-image:url(../IMAGES/background.jpg);
 
-   background-repeat:no-repeat;
-
-   background-size:cover;
 </script>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+
+     
+
+</body>
+
+</html> 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
 	<hr>
 	<center><address>
 Written by:<ul style="list-style-type:square">
@@ -144,5 +270,3 @@ Visit us at:<br>
 Example.com<br>
 
 		</address> </center>
-</body>
-</html> 
